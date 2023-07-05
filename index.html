@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+<main>
+  <div id="content">
+    <div id="picture-container">
+      <picture>
+        <source media="(min-width: 700px)" srcset = "./assets/images/illustration-sign-up-desktop.svg">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" id = "initial-image">
+      </picture>
+    </div>
+    <div id="text">
+      <div class="title">
+        <h1>Stay updated!</h1>
+      </div>
+      <div id="paragraph">
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      </div>
+      <div id="info">
+        <p class="about">Product discovery and building what matters</p>
+        <p class="about">Measuring to ensure updates are a success</p>
+        <p class="about">And much more!</p>
+      </div>
+  
+      <div id="form">
+        <p id="email"> Email address</p>
+        <form action="">
+          <input type="text" placeholder = "email@company.com" id = "input" required>
+          <p id = "invalid-p" class = invalid></p>
+        </form>
+        <button id = "sub-btn">Subscribe to monthly newsletter</button>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>  
+</body>
+</html>
